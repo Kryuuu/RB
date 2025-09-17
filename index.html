@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rumah BUMN — Dashboard</title>
+    <meta name="description" content="Company profile minimalis: dashboard, pendaftaran UMKM, pendaftaran magang, dan katalog.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">Rumah <span>BUMN</span></a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav class="menu" aria-label="Navigasi utama">
+          <a href="index.html" class="active">Dashboard</a>
+          <a href="about.html">Tentang</a>
+          <a href="umkm.html">Pendaftaran UMKM</a>
+          <a href="magang.html">Pendaftaran Magang</a>
+          <a href="catalog.html">Katalog</a>
+        </nav>
+      </div>
+    </header>
+    <div class="backdrop" hidden></div>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Bangun Ekosistem UMKM yang Tangguh</h1>
+            <p>Kolaborasi, pendampingan, dan akses pasar untuk UMKM dan talenta muda melalui program magang.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="umkm.html">Daftar UMKM</a>
+              <a class="btn ghost" href="magang.html">Daftar Magang</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistik singkat beranda -->
+      <section class="container" style="margin-top:18px">
+        <article class="card" style="padding:10px">
+          <div class="stats">
+            <div class="stat"><div class="num" data-counter-format="short" data-counter-scramble="0" data-counter-duration="1200">1.200+</div><div class="lbl">UMKM Tergabung</div></div>
+            <div class="stat"><div class="num" data-counter-format="short" data-counter-scramble="0" data-counter-duration="1200">80+</div><div class="lbl">Sesi Pembinaan/Tahun</div></div>
+            <div class="stat"><div class="num" data-counter-format="short" data-counter-scramble="0" data-counter-duration="1200">30+</div><div class="lbl">Kota/Kabupaten</div></div>
+            <div class="stat"><div class="num" data-counter-format="short" data-counter-scramble="0" data-counter-duration="1200">300+</div><div class="lbl">Peserta Magang</div></div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Slider kereta di atas Koleksi Pilihan -->
+      <section class="showcase">
+        <div class="container">
+          <div class="slider-train" data-train data-speed="28">
+            <div class="track">
+              <figure class="item">
+                <img alt="Etalase UMKM 1" src="https://images.unsplash.com/photo-1536514498073-50e69d39c6bb?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Camilan Sehat</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 2" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Kuliner Lokal</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 3" src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Kopi Kemas</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 4" src="https://images.unsplash.com/photo-1520974918319-9e37da1fc9a0?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Tenun Nusantara</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 5" src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Kerajinan</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 6" src="https://images.unsplash.com/photo-1580294645306-860b88b54d5d?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Anyaman</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 7" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Dekor Kayu</figcaption>
+              </figure>
+              <figure class="item">
+                <img alt="Etalase UMKM 8" src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1600&auto=format&fit=crop">
+                <figcaption>Wastra</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ, Timeline, dan Testimonial -->
+      <section class="container" style="margin-top:18px">
+        <div class="grid two">
+          <article class="card" style="padding:12px">
+            <h3>FAQ</h3>
+            <div class="accordion" data-accordion>
+              <div class="item">
+                <button class="head" aria-expanded="false">Bagaimana cara mendaftar UMKM?</button>
+                <div class="panel"><p>Isi formulir di halaman Pendaftaran UMKM, lalu tim kami akan menghubungi Anda.</p></div>
+              </div>
+              <div class="item">
+                <button class="head" aria-expanded="false">Apakah ada biaya?</button>
+                <div class="panel"><p>Tidak ada biaya pendaftaran. Program pembinaan dasar gratis.</p></div>
+              </div>
+              <div class="item">
+                <button class="head" aria-expanded="false">Program magang untuk siapa?</button>
+                <div class="panel"><p>Terbuka untuk mahasiswa atau fresh graduate yang ingin belajar dan berkontribusi.</p></div>
+              </div>
+            </div>
+          </article>
+          <article class="card" style="padding:12px">
+            <h3>Timeline Program</h3>
+            <div class="timeline">
+              <div class="entry"><strong>Onboarding</strong><div class="muted">Minggu 1–2</div></div>
+              <div class="entry"><strong>Pembinaan</strong><div class="muted">Minggu 3–8</div></div>
+              <div class="entry"><strong>Kurasi & Pasar</strong><div class="muted">Minggu 9–12</div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top:18px">
+        <article class="carousel" data-carousel data-interval="5000">
+          <div class="slides">
+            <figure class="slide active">
+              <img alt="Testimoni 1" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1200&auto=format&fit=crop">
+              <figcaption>“Pendampingannya praktis dan berdampak pada penjualan kami.”</figcaption>
+            </figure>
+            <figure class="slide">
+              <img alt="Testimoni 2" src="https://images.unsplash.com/photo-1544716278-e513176f20b5?q=80&w=1200&auto=format&fit=crop">
+              <figcaption>“Akses pasar makin luas, dokumentasi produk dibantu.”</figcaption>
+            </figure>
+            <figure class="slide">
+              <img alt="Testimoni 3" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1200&auto=format&fit=crop">
+              <figcaption>“Program magang-nya seru, dapat pengalaman nyata.”</figcaption>
+            </figure>
+          </div>
+          <div class="controls"><button class="prev" aria-label="Sebelumnya">‹</button><button class="next" aria-label="Berikutnya">›</button></div>
+          <div class="dots" role="tablist"></div>
+        </article>
+      </section>
+
+      <section class="featured">
+        <div class="container">
+          <div class="section-head">
+            <h2>Koleksi Pilihan</h2>
+            <p>Beberapa produk unggulan dari mitra UMKM kami.</p>
+          </div>
+          <div class="grid cards">
+            <article class="card">
+              <img alt="Kopi kemasan" src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200&auto=format&fit=crop">
+              <div class="card-body">
+                <h3>Kopi Nusantara</h3>
+                <p>Cita rasa autentik dari petani lokal terkurasi.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img alt="Kerajinan tangan" src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1200&auto=format&fit=crop">
+              <div class="card-body">
+                <h3>Anyaman Etnik</h3>
+                <p>Produk ramah lingkungan dengan desain modern.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img alt="Kuliner lokal" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop">
+              <div class="card-body">
+                <h3>Camilan Tradisional</h3>
+                <p>Asli, higienis, dan cocok untuk oleh-oleh.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img alt="Fashion lokal" src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1200&auto=format&fit=crop">
+              <div class="card-body">
+                <h3>Wastra Kontemporer</h3>
+                <p>Perpaduan motif tradisional dan gaya masa kini.</p>
+              </div>
+            </article>
+          </div>
+          <div class="section-cta">
+            <a class="btn primary" href="catalog.html">Lihat Semua Katalog</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand muted">Rumah <span>BUMN</span></div>
+            <p class="muted">Mendorong pertumbuhan UMKM melalui kolaborasi, pembinaan, dan akses pasar.</p>
+          </div>
+          <div>
+            <strong>Navigasi</strong>
+            <ul>
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="about.html">Tentang</a></li>
+              <li><a href="umkm.html">Pendaftaran UMKM</a></li>
+              <li><a href="magang.html">Pendaftaran Magang</a></li>
+              <li><a href="catalog.html">Katalog</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>Kontak</strong>
+            <ul>
+              <li>Email: info@rumahbumn.example</li>
+              <li>Telp: (021) 123-4567</li>
+              <li>Alamat: Jakarta, Indonesia</li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">© <span id="year"></span> Rumah BUMN. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>window.RB3D_OPTS = Object.assign({}, window.RB3D_OPTS || {}, { intensity: 'strong', disableOnMobile: false });</script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

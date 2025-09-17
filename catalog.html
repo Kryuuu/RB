@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katalog — Rumah BUMN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">Rumah <span>BUMN</span></a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav class="menu" aria-label="Navigasi utama">
+          <a href="index.html">Dashboard</a>
+          <a href="about.html">Tentang</a>
+          <a href="umkm.html">Pendaftaran UMKM</a>
+          <a href="magang.html">Pendaftaran Magang</a>
+          <a href="catalog.html" class="active">Katalog</a>
+        </nav>
+      </div>
+    </header>
+    <div class="backdrop" hidden></div>
+
+    <main class="page">
+      <section class="page-hero slim">
+        <div class="container">
+          <h1>Katalog Produk</h1>
+          <p>Telusuri beragam produk unggulan dari mitra UMKM.</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="filters card">
+          <form class="filters-form" id="filtersForm" role="search">
+            <div class="searchbar" data-has-value="0">
+              <span class="icon" aria-hidden="true">🔎</span>
+              <input type="search" id="search" placeholder="Cari produk, kategori, kata kunci..." aria-label="Cari katalog">
+              <button type="button" class="clear" aria-label="Bersihkan pencarian">✕</button>
+            </div>
+            <input type="hidden" id="filterKategori" value="">
+            <div class="chip-group" aria-label="Kategori">
+              <button type="button" class="chip active" data-kat="">Semua</button>
+              <button type="button" class="chip" data-kat="mamin">Makanan & Minuman</button>
+              <button type="button" class="chip" data-kat="fashion">Fashion</button>
+              <button type="button" class="chip" data-kat="kerajinan">Kerajinan</button>
+            </div>
+            <div class="meta"><span id="resultCount"></span></div>
+          </form>
+        </div>
+
+        <div class="grid cards" id="catalogGrid">
+          <article class="card" data-kategori="mamin">
+            <img alt="Kopi kemasan" src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-body">
+              <h3>Kopi Arabika</h3>
+              <p>Roast medium, rasa seimbang dan wangi khas.</p>
+              <button type="button" class="btn ghost sm" data-quickview>Quick View</button>
+            </div>
+          </article>
+          <article class="card" data-kategori="kerajinan">
+            <img alt="Kerajinan kayu" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-body">
+              <h3>Dekor Kayu</h3>
+              <p>Aksen rumah minimalis dari kayu lokal berkelanjutan.</p>
+              <button type="button" class="btn ghost sm" data-quickview>Quick View</button>
+            </div>
+          </article>
+          <article class="card" data-kategori="fashion">
+            <img alt="Kain tenun" src="https://images.unsplash.com/photo-1520974918319-9e37da1fc9a0?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-body">
+              <h3>Tenun Nusantara</h3>
+              <p>Motif klasik dengan sentuhan modern.</p>
+              <button type="button" class="btn ghost sm" data-quickview>Quick View</button>
+            </div>
+          </article>
+          <article class="card" data-kategori="mamin">
+            <img alt="Cemilan" src="https://images.unsplash.com/photo-1536514498073-50e69d39c6bb?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-body">
+              <h3>Camilan Sehat</h3>
+              <p>Nikmat, renyah, dan rendah gula.</p>
+              <button type="button" class="btn ghost sm" data-quickview>Quick View</button>
+            </div>
+          </article>
+          <article class="card" data-kategori="kerajinan">
+            <img alt="Anyaman" src="https://images.unsplash.com/photo-1580294645306-860b88b54d5d?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-body">
+              <h3>Tas Anyaman</h3>
+              <p>Ringan, kuat, dan modis untuk harian.</p>
+              <button type="button" class="btn ghost sm" data-quickview>Quick View</button>
+            </div>
+          </article>
+          <article class="card" data-kategori="fashion">
+            <img alt="Batik" src="https://images.unsplash.com/photo-1558352691-6d1c86c3f7a4?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-body">
+              <h3>Kemeja Batik</h3>
+              <p>Batik tulis premium, nyaman dipakai.</p>
+              <button type="button" class="btn ghost sm" data-quickview>Quick View</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="copyright">© <span id="year"></span> Rumah BUMN</p>
+      </div>
+    </footer>
+
+    <script>window.RB3D_OPTS = Object.assign({}, window.RB3D_OPTS || {}, { intensity: 'strong', disableOnMobile: false });</script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

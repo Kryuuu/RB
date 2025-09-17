@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pendaftaran Magang — Rumah BUMN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">Rumah <span>BUMN</span></a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav class="menu" aria-label="Navigasi utama">
+          <a href="index.html">Dashboard</a>
+          <a href="about.html">Tentang</a>
+          <a href="umkm.html">Pendaftaran UMKM</a>
+          <a href="magang.html" class="active">Pendaftaran Magang</a>
+          <a href="catalog.html">Katalog</a>
+        </nav>
+      </div>
+    </header>
+    <div class="backdrop" hidden></div>
+
+    <main class="page">
+      <section class="page-hero slim">
+        <div class="container">
+          <h1>Form Pendaftaran Peserta Magang</h1>
+          <p>Kesempatan belajar dan berkontribusi bagi talenta muda.</p>
+        </div>
+      </section>
+
+      <section class="container form-section">
+        <form id="formMagang" class="card form" novalidate>
+          <div class="grid two">
+            <div class="field">
+              <label for="nama">Nama Lengkap</label>
+              <input id="nama" name="nama" type="text" required placeholder="Nama sesuai KTP">
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="nama@kampus.ac.id">
+              <small class="error">Email tidak valid</small>
+            </div>
+            <div class="field">
+              <label for="telepon">No. Telepon/WA</label>
+              <input id="telepon" name="telepon" type="tel" required placeholder="08xxxxxxxxxx" pattern="[0-9\s+()-]{8,}">
+              <small class="error">Isi nomor yang valid</small>
+            </div>
+            <div class="field">
+              <label for="kampus">Universitas/Institusi</label>
+              <input id="kampus" name="kampus" type="text" required placeholder="Nama perguruan tinggi">
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field">
+              <label for="prodi">Program Studi</label>
+              <input id="prodi" name="prodi" type="text" required placeholder="Contoh: Manajemen">
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field">
+              <label for="mulai">Rencana Mulai</label>
+              <input id="mulai" name="mulai" type="date" required>
+              <small class="error">Pilih tanggal mulai</small>
+            </div>
+            <div class="field full">
+              <label for="motivasi">Motivasi</label>
+              <textarea id="motivasi" name="motivasi" rows="4" required placeholder="Ceritakan motivasi dan ketertarikan Anda"></textarea>
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field full">
+              <label for="portfolio">Tautan CV/Portofolio (opsional)</label>
+              <input id="portfolio" name="portfolio" type="url" placeholder="https://...">
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Kirim Pendaftaran</button>
+            <p class="muted small">Pastikan data yang Anda isi benar.</p>
+          </div>
+          <div id="magangSuccess" class="notice success hidden">Terima kasih! Form pendaftaran magang Anda sudah terkirim.</div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="copyright">© <span id="year"></span> Rumah BUMN</p>
+      </div>
+    </footer>
+
+    <script>window.RB3D_OPTS = Object.assign({}, window.RB3D_OPTS || {}, { intensity: 'strong', disableOnMobile: false });</script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

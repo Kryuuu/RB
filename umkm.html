@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pendaftaran UMKM — Rumah BUMN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">Rumah <span>BUMN</span></a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav class="menu" aria-label="Navigasi utama">
+          <a href="index.html">Dashboard</a>
+          <a href="about.html">Tentang</a>
+          <a href="umkm.html" class="active">Pendaftaran UMKM</a>
+          <a href="magang.html">Pendaftaran Magang</a>
+          <a href="catalog.html">Katalog</a>
+        </nav>
+      </div>
+    </header>
+    <div class="backdrop" hidden></div>
+
+    <main class="page">
+      <section class="page-hero slim">
+        <div class="container">
+          <h1>Form Pendaftaran UMKM</h1>
+          <p>Gabung sebagai mitra UMKM untuk mendapatkan pembinaan dan akses pasar.</p>
+        </div>
+      </section>
+
+      <section class="container form-section">
+        <form id="formUmkm" class="card form" novalidate>
+          <div class="grid two">
+            <div class="field">
+              <label for="nama_umkm">Nama UMKM</label>
+              <input id="nama_umkm" name="nama_umkm" type="text" required placeholder="Contoh: Kopi Sejahtera">
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field">
+              <label for="pemilik">Nama Pemilik</label>
+              <input id="pemilik" name="pemilik" type="text" required placeholder="Nama lengkap pemilik">
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="nama@contoh.com">
+              <small class="error">Gunakan email yang valid</small>
+            </div>
+            <div class="field">
+              <label for="telepon">No. Telepon/WA</label>
+              <input id="telepon" name="telepon" type="tel" required placeholder="08xxxxxxxxxx" pattern="[0-9\s+()-]{8,}">
+              <small class="error">Isi nomor yang valid</small>
+            </div>
+            <div class="field">
+              <label for="kategori">Kategori Produk</label>
+              <select id="kategori" name="kategori" required>
+                <option value="">Pilih kategori</option>
+                <option>Makanan & Minuman</option>
+                <option>Kerajinan</option>
+                <option>Fashion</option>
+                <option>Kosmetik</option>
+                <option>Lainnya</option>
+              </select>
+              <small class="error">Pilih salah satu</small>
+            </div>
+            <div class="field">
+              <label for="kota">Kota/Kabupaten</label>
+              <input id="kota" name="kota" type="text" required placeholder="Contoh: Bandung">
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field full">
+              <label for="alamat">Alamat</label>
+              <textarea id="alamat" name="alamat" rows="3" required placeholder="Alamat operasional"></textarea>
+              <small class="error">Wajib diisi</small>
+            </div>
+            <div class="field full">
+              <label for="deskripsi">Deskripsi Singkat UMKM</label>
+              <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Ceritakan produk dan keunggulan Anda" required></textarea>
+              <small class="error">Wajib diisi</small>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Kirim Pendaftaran</button>
+            <p class="muted small">Dengan menekan Kirim, Anda menyetujui kebijakan privasi.</p>
+          </div>
+          <div id="umkmSuccess" class="notice success hidden">Terima kasih! Pendaftaran UMKM Anda telah kami terima.</div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="copyright">© <span id="year"></span> Rumah BUMN</p>
+      </div>
+    </footer>
+
+    <script>window.RB3D_OPTS = Object.assign({}, window.RB3D_OPTS || {}, { intensity: 'strong', disableOnMobile: false });</script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
